@@ -173,16 +173,16 @@ a:hover, a:focus {
 /*------- Selected menu item -------*/
 .topicsList .topic.current {
     font-family: 'Tajawal', sans-serif;
-    background-color: mediumslateblue;
-    color: white;
+    background-color: steelblue;
+    color: black;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
 }
 /*--- When hovering ---*/
 .topicsList .topic:hover {
-    background-color: mediumorchid;
-    color: steelblue;
+    background-color: white;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
 }

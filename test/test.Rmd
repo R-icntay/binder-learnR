@@ -20,11 +20,25 @@ knitr::opts_chunk$set(echo = FALSE)
 
 *Here's a simple exercise with an empty code chunk provided for entering the answer.*
 
+
+
 Write the R code required to add two plus two:
 
-```{r two-plus-two, exercise=TRUE}
-
+```{r prepare-flights}
+a <- 10
 ```
+
+```{r filtered-flights, exercise.setup = "prepare-flights"}
+# Prepare a filtered nycflights to select February rather than January
+b <- a * 12
+```
+
+```{r arrange, exercise=TRUE, exercise.setup = "filtered-flights"}
+# Change the sort order to Ascending
+b*10
+```
+
+
 
 ### Exercise with Code
 
@@ -32,14 +46,42 @@ Write the R code required to add two plus two:
 
 Now write a function that adds any two numbers and then call it:
 
-```{r add-function, exercise=TRUE, exercise.lines = 5}
-add <- function() {
-  
-}
+```{r prev, exercise=TRUE, exercise.setup = "setupA", exercise.eval = T}
+#y = 2 * x
+#y
 ```
+
+
+
+```{r exp, exercise = T}
+# Experiment here
+```
+
+
+
 
 ## Topic 2
 
+### Some more
+You can create matrices and arrays with [`matrix()`](https://rdrr.io/r/base/matrix.html) and [`array()`](https://rdrr.io/r/base/array.html), or by using the assignment form of [`dim()`](https://rdrr.io/r/base/dim.html): We'll use `dim` in this walk through. See how to use `matrix` or `array` by typing `?matrix` or `?array` on your RStudio console.
+
+```{r seq_init}
+# Sequence of integers starting from 1 to 6
+int_seq <- 1:6
+```
+
+```{r seq, exercise = TRUE, exercise.eval = T}
+# Sequence of integers starting from 1 to 6
+int_seq <- 1:6
+```
+
+For example, you can reorganize `int_seq` into a 2 × 3 matrix (which has 2 rows and 3 columns):
+
+```{r seq_dim, exercise = TRUE, exercise.eval = T}
+dim(int_seq) <- c(2,3)
+
+print(int_seq)
+```
 
 ### Quiz
 
