@@ -24,16 +24,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Write the R code required to add two plus two:
 
-```{r prepare-flights}
+```{r inita}
 a <- 10
 ```
 
-```{r filtered-flights, exercise.setup = "prepare-flights"}
+```{r filtered-flights, exercise = TRUE}
 # Prepare a filtered nycflights to select February rather than January
 b <- a * 12
 ```
 
-```{r arrange, exercise=TRUE, exercise.setup = "filtered-flights"}
+
+```{r initb}
+b = a*12
+```
+
+
+
+```{r arrange, exercise=TRUE}
 # Change the sort order to Ascending
 b*10
 ```
