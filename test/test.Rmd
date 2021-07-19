@@ -13,14 +13,13 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+![](images/encouRage.jpg){width="630"}
 
 ## Topic 1
 
-### Exercise 
+### Exercise
 
 *Here's a simple exercise with an empty code chunk provided for entering the answer.*
-
-
 
 Write the R code required to add two plus two:
 
@@ -33,19 +32,14 @@ a <- 10
 b <- a * 12
 ```
 
-
 ```{r initb}
 b = a*12
 ```
-
-
 
 ```{r arrange, exercise=TRUE}
 # Change the sort order to Ascending
 b*10
 ```
-
-
 
 ### Exercise with Code
 
@@ -58,18 +52,14 @@ Now write a function that adds any two numbers and then call it:
 #y
 ```
 
-
-
 ```{r exp, exercise = T}
 # Experiment here
 ```
 
-
-
-
 ## Topic 2
 
 ### Some more
+
 You can create matrices and arrays with [`matrix()`](https://rdrr.io/r/base/matrix.html) and [`array()`](https://rdrr.io/r/base/array.html), or by using the assignment form of [`dim()`](https://rdrr.io/r/base/dim.html): We'll use `dim` in this walk through. See how to use `matrix` or `array` by typing `?matrix` or `?array` on your RStudio console.
 
 ```{r seq_init}
@@ -112,4 +102,3 @@ quiz(
   )
 )
 ```
-
